@@ -1,0 +1,62 @@
+* {
+  padding: 0; /* Задаю для всего документа*/
+  margin: 0;
+}
+
+html {
+    box-sizing: border-box; /* Ширина блока с полями */
+    width: 100%; 
+    height: 100%;
+}
+
+body {    
+  font-size: 11px; /* Размер шрифта */
+  line-height: 16px; /* Размер шрифта */
+  font-weight: 400; /* Ширина шрифта */
+  color: #ffffff; /* Цвет шрифта */
+  background-color: #151313; /* Цвет фона */
+}
+
+a {
+    text-decoration: none; /* Отменяет все эффекты, в том числе и подчеркивания у ссылок, которое задано по умолчанию */
+}
+
+img {
+    max-width: 100%; /* Ширина 100% */
+    height: auto; /* Высота авто */
+}
+  
+.section__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #ffffff;
+    text-align: center;
+}
+  
+.section__lead {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #a07b50;
+}
+
+.pets {
+    background-color: #1f1c1d;
+}
+  
+.breed-features {
+    background-color: #1f1c1d;
+}
+  
+.faq {
+    background-color: #1f1c1d;
+}
+  
+.reviews {
+    background-color: #1f1c1d;
+}
+  
