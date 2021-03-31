@@ -57,6 +57,7 @@ img {
     text-align: center;
     color: #a07b50;
 }
+
 .header {
   position: relative;
   background-color: #151313;
@@ -119,6 +120,7 @@ img {
 .pets {
     background-color: #1f1c1d;
 }
+
 .pets__tab-content-wrapper {
   width: 100%;
 }
