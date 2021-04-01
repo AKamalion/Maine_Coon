@@ -26,14 +26,14 @@ img {
     height: auto; /* Высота авто */
 }
 
-.container { 
-    position: relative;
-    max-width: 1286px;
+.container, .section__container, .section__advantages_container, .section__care_container, .section__team_container, .section__faq_container, .section__reviews_container, .footer_container { /* Свойства для всех контейнеров */
+    position: relative; /* Положение элемента устанавливается относительно его исходного места */
+    max-width: 1286px; /* Максимальная ширина элемента */
     margin: 0 auto;
     padding: 0 40px;
 }
 
-.section__wrapper {
+.section__wrapper { 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -81,7 +81,7 @@ img {
   padding-top: 47px;
   padding-bottom: 64px;
   overflow: hidden;
-  z-index: 2;
+  z-index: 2; /* z-ось для позиционированных элементов */
 }
 
 .slider {
@@ -105,7 +105,7 @@ img {
   position: relative;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 1; /* z-ось для позиционированных элементов */
   display: flex;
   box-sizing: content-box;
 }
@@ -170,7 +170,7 @@ img {
   padding-bottom: 129px;
 }
 
-.advantages {
+.section__advantages {
   background-color: #151313;
 }
 
@@ -179,7 +179,7 @@ img {
   padding-bottom: 64px;
 }
 
-.care {
+.section__care {
   background-color: #151313;
 }
 
@@ -188,7 +188,7 @@ img {
   padding-bottom: 51px;
 }
 
-.team {
+.section__team {
   background-color: #151313;
 }
 
@@ -211,7 +211,7 @@ img {
   align-items: center;
 }
   
-.faq {
+.section__faq {
     background-color: #1f1c1d;
 }
 
@@ -220,7 +220,7 @@ img {
   padding-bottom: 30px;
 }
 
-.reviews {
+.section__reviews {
     background-color: #1f1c1d;
 }
   
