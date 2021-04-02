@@ -66,6 +66,21 @@ img {
     height: auto; /* Высота авто */
 }
   
+.slider__button_hidden:not(:focus):not(:active) { /* предполагалась, что это будет скрытая кнопка для пролистывания в блоках по всему сайту */
+    position: absolute;
+    top: 0; 
+    left: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    white-space: nowrap;
+    border: 0;
+    clip-path: inset(100%);
+  }
+
 .section__title {
     font-style: normal;
     font-weight: normal;
