@@ -26,18 +26,21 @@ img {
     height: auto; /* Высота авто */
 }
 
-.container, .section__container, .section__advantages_container, .section__care_container, .section__team_container, .section__faq_container, .section__reviews_container, .footer_container { /* Свойства для всех контейнеров */
-    position: relative; /* Положение элемента устанавливается относительно его исходного места */
-    max-width: 1286px; /* Максимальная ширина элемента */
+/* .container { Свойства для всех блоков контейнер 
+    max-width: 1286px;  
     margin: 0 auto;
     padding: 0 40px;
 }
+*/ 
 
 .section__wrapper { 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    max-width: 1286px;  
+    margin: 0 auto;
+    padding: 0 40px;
 }
     
 .section__title {
@@ -59,12 +62,10 @@ img {
 }
 
 .header {
-  position: relative;
   background-color: #151313;
 }
 
 .header__container {
-  position: relative;
   max-width: 1366px;
   margin: 0 auto;
   padding: 0 80px;
@@ -73,9 +74,8 @@ img {
 .header__wrapper {
   margin: 0 auto;
   width: auto;
-  position: relative;
+  position: relative; /* для z-оси */
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
   padding-top: 47px;
@@ -85,9 +85,7 @@ img {
 }
 
 .slider {
-  position: relative;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -95,14 +93,13 @@ img {
 .slider__container {
   margin-left: auto;
   margin-right: auto;
-  position: relative;
   overflow: hidden;
   list-style: none;
   padding: 0;
 }
 
 .slider__wrapper {
-  position: relative;
+  position: relative; /* для z-оси */
   width: 100%;
   height: 100%;
   z-index: 1; /* z-ось для позиционированных элементов */
@@ -114,7 +111,6 @@ img {
   flex-shrink: 0;
   width: 100%;
   height: 100%;
-  position: relative;
 }
 
 .pets {
@@ -128,6 +124,9 @@ img {
 .pets__wrapper {
   padding-top: 223px;
   padding-bottom: 21px;
+  max-width: 1286px;  
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .gallery {
@@ -143,7 +142,6 @@ img {
 
 .gallery__wrapper {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
 }
 
@@ -165,7 +163,6 @@ img {
 }
 
 .breed-features__wrapper {
-  position: relative;
   padding-top: 21px;
   padding-bottom: 129px;
 }
@@ -206,7 +203,6 @@ img {
 .team__slider {
   align-self: stretch;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -236,9 +232,7 @@ img {
 
 .footer__wrapper {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
   flex-wrap: wrap;
   margin: 0 auto;
   width: 72.7%;
