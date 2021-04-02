@@ -26,8 +26,10 @@ img {
     height: auto; /* Высота авто */
 }
   
-.slider__button_hidden:not(:focus):not(:active) { /* Правильно я понимаю, что мне нужно переименовать все похожие элементы, чтобы не плодить одинаковые свойства под разными классами? */
+.slider__button_hidden:not(:focus):not(:active) { /* предполагалась, что это будет скрытая кнопка для пролистывания в блоках по всему сайту */
     position: absolute;
+    top: 0; 
+    left: 0;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     width: 1px;
